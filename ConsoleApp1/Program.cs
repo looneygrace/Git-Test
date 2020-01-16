@@ -37,16 +37,11 @@ namespace ConsoleApp1
                     userInput = Console.ReadLine();
                     theirNum = Convert.ToInt32(userInput);
                 }
-                else if (theirNum == myNum)
-                {
-                    Console.WriteLine("YOU HAVE GUESSED THE CORRECT NUMBER!" + "YAY!");
-                    Console.WriteLine("My number was: " + myNum);
-                }
-                else
-                {
-                    Console.WriteLine("ERROR");
-                }
+                
             }
+            Console.WriteLine("YOU HAVE GUESSED THE CORRECT NUMBER!");
+            Console.WriteLine("My number was: " + myNum);
+            Console.ReadKey();
         }
     }
 }
